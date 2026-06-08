@@ -30,7 +30,7 @@ const createdSites = [
   {
     description:
       "Projeto para organizacao de agendas, horarios e solicitacoes de atendimento.",
-    name: "agendamentos-project",
+    name: "agendamentos",
     url: "https://agendamentos-project.vercel.app",
   },
 ];
