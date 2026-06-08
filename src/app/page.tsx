@@ -17,9 +17,9 @@ const createdSites = [
   {
     description:
       "Sistema para gestao de veiculos, clientes, atendimentos e rotinas comerciais.",
-    loginUrl: "https://crm-veiculos.vercel.app/",
+    loginUrl: "https://crm-veiculos-vbpassos-projects.vercel.app/login",
     name: "crm-veiculos",
-    url: "https://crm-veiculos.vercel.app/",
+    url: "https://crm-veiculos-vbpassos-projects.vercel.app/",
   },
   {
     description:
