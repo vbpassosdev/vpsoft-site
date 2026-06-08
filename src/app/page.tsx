@@ -33,6 +33,12 @@ const createdSites = [
     name: "agendamentos",
     url: "https://agendamentos-project.vercel.app",
   },
+  {
+    description:
+      "Sistema para controle financeiro, organizacao de receitas, despesas e acompanhamento de resultados.",
+    name: "financas",
+    url: "https://financas-vpsoft.vercel.app/",
+  },
 ];
 
 export default function Home() {
