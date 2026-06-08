@@ -1,3 +1,5 @@
+import { SitesSelector } from "./sites-selector";
+
 const highlights = [
   "Solucoes sob medida para empresas que precisam organizar processos, dados e operacoes digitais.",
   "Atendimento proximo, com foco em entender o contexto do cliente antes de propor tecnologia.",
@@ -11,6 +13,27 @@ const services = [
   "Integracoes e manutencao de software",
 ];
 
+const createdSites = [
+  {
+    description:
+      "Sistema para gestao de veiculos, clientes, atendimentos e rotinas comerciais.",
+    name: "crm-veiculos",
+    url: "https://crm-veiculos.vercel.app",
+  },
+  {
+    description:
+      "Site para consultas e acesso rapido a informacoes organizadas em uma interface simples.",
+    name: "consulta",
+    url: "https://consulta.vercel.app",
+  },
+  {
+    description:
+      "Projeto para organizacao de agendas, horarios e solicitacoes de atendimento.",
+    name: "agendamentos-project",
+    url: "https://agendamentos-project.vercel.app",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f6f2ec] text-[#201916]">
@@ -22,6 +45,9 @@ export default function Home() {
           <nav className="hidden items-center gap-6 text-sm font-medium text-[#5f514a] sm:flex">
             <a className="transition hover:text-[#201916]" href="#quem-somos">
               Quem somos
+            </a>
+            <a className="transition hover:text-[#201916]" href="#sites">
+              Sites
             </a>
             <a className="transition hover:text-[#201916]" href="#biografia">
               Biografia
@@ -121,7 +147,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="biografia" className="px-6 py-20 sm:px-10 lg:px-12">
+      <section id="sites" className="px-6 py-20 sm:px-10 lg:px-12">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#8c5a3c]">
+              Sites criados
+            </p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em]">
+              Acesse os projetos ja publicados.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#5f514a]">
+              Selecione um dos sites desenvolvidos para abrir o projeto em uma
+              nova aba.
+            </p>
+          </div>
+
+          <div className="grid gap-6">
+            <SitesSelector sites={createdSites} />
+            <div className="grid gap-4 md:grid-cols-3">
+              {createdSites.map((site) => (
+                <a
+                  className="rounded-2xl border border-[#201916]/10 bg-white/70 p-5 shadow-sm transition hover:-translate-y-1 hover:border-[#8c5a3c]/40"
+                  href={site.url}
+                  key={site.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <p className="font-semibold">{site.name}</p>
+                  <p className="mt-2 text-sm leading-6 text-[#5f514a]">
+                    {site.url.replace("https://", "")}
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="biografia"
+        className="border-t border-[#201916]/10 bg-white px-6 py-20 sm:px-10 lg:px-12"
+      >
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[2rem] bg-[#201916] p-8 text-white">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#d9b899]">
