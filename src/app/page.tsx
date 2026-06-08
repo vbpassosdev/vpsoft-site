@@ -25,7 +25,7 @@ const createdSites = [
     description:
       "Site para consultas e acesso rapido a informacoes organizadas em uma interface simples.",
     name: "consulta",
-    url: "https://consultascpc-vbpassos-projects.vercel.app/",
+    url: "https://consulta-livid.vercel.app/login",
   },
   {
     description:
