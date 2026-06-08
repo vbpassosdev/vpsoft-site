@@ -4,6 +4,7 @@ import { useState } from "react";
 
 type Site = {
   description: string;
+  loginUrl?: string;
   name: string;
   url: string;
 };
@@ -39,7 +40,19 @@ export function SitesSelector({ sites }: SitesSelectorProps) {
 
       {selectedSite ? (
         <div className="mt-5 rounded-2xl bg-[#f6f2ec] p-5">
-          <p className="font-semibold">{selectedSite.name}</p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            {selectedSite.loginUrl ? (
+              <a
+                className="order-first w-fit rounded-full border border-[#201916]/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8c5a3c] transition hover:border-[#8c5a3c]/50 hover:text-[#201916]"
+                href={selectedSite.loginUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Logar
+              </a>
+            ) : null}
+            <p className="font-semibold">{selectedSite.name}</p>
+          </div>
           <p className="mt-2 text-sm leading-6 text-[#5f514a]">
             {selectedSite.description}
           </p>
