@@ -265,6 +265,13 @@ export default function Home() {
             >
               GitHub
             </a>
+            <a
+              href="https://linkedin.com/in/vanessabpassos"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
       </footer>
