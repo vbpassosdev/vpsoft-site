@@ -157,10 +157,10 @@ export default function Home() {
         <div className="mx-auto flex max-w-5xl flex-col gap-2 border-t border-[#201916]/10 pt-8">
           <p className="font-semibold">Vanessa Passos</p>
           <a
-            href="mailto:contato@vbpassos.dev"
+            href="mailto:passos.vanessa@gmail.com"
             className="text-sm text-[#8c5a3c]"
           >
-            contato@vbpassos.dev
+            passos.vanessa@gmail.com
           </a>
         </div>
       </footer>
