@@ -221,30 +221,29 @@ export default function Home() {
       </section>
 
       <section id="contato" className="px-6 py-20">
-        <div className="mx-auto max-w-6xl rounded-[2rem] bg-[#8c5a3c] px-6 py-12 text-white sm:px-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-white/70">
-            Vamos conversar
+        <div className="mx-auto max-w-6xl rounded-[2rem] border border-[#201916]/10 bg-white px-6 py-10 sm:px-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8c5a3c]">
+            Disponibilidade
           </p>
-          <h2 className="mt-4 max-w-3xl text-4xl font-semibold">
-            Precisa desenvolver um sistema, modernizar um processo ou integrar
-            seu ERP?
+          <h2 className="mt-4 max-w-3xl text-3xl font-semibold">
+            Também colaboro em projetos freelance para outras empresas.
           </h2>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-            Conte brevemente o que sua empresa precisa e vamos avaliar a melhor
-            solução.
+          <p className="mt-4 max-w-2xl leading-7 text-[#5f514a]">
+            Estou disponível para projetos pontuais de desenvolvimento,
+            integrações, automações e apoio na evolução de sistemas existentes.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="mailto:passos.vanessa@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20or%C3%A7amento"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#201916]"
+              href="mailto:passos.vanessa@gmail.com?subject=Projeto%20freelance"
+              className="rounded-full bg-[#201916] px-6 py-3 text-sm font-semibold text-white"
             >
-              Solicitar orçamento
+              Entrar em contato
             </a>
             <a
               href="https://github.com/vbpassosdev"
               rel="noopener noreferrer"
               target="_blank"
-              className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold"
+              className="rounded-full border border-[#201916]/20 px-6 py-3 text-sm font-semibold"
             >
               Ver GitHub
             </a>
