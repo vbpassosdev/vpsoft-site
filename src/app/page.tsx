@@ -272,6 +272,13 @@ export default function Home() {
             >
               LinkedIn
             </a>
+            <a
+              href="https://wa.me/5519997027091"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              WhatsApp: (19) 99702-7091
+            </a>
           </div>
         </div>
       </footer>
