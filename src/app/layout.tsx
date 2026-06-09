@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VPSoft | Tecnologia com clareza",
+  title: "Vanessa Passos | Desenvolvimento de Software e ERP",
   description:
-    "Site institucional da VPSoft, com apresentacao da empresa e biografia de Vanessa Passos.",
+    "Desenvolvimento de ERP, integrações, automação de processos e sistemas web para empresas.",
 };
 
 export default function RootLayout({
